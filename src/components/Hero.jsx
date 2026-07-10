@@ -37,7 +37,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg text-gray-600 max-w-xl leading-relaxed font-sans">
-              Automate inbound patient calls seamlessly. CareVoice.AI greets
+              Automate inbound patient calls seamlessly. GudMed.AI greets
               patients, captures symptoms, recommends the right doctors, checks
               availability, books appointments instantly, and intelligently
               transfers complex calls to hospital staff.
@@ -50,15 +50,6 @@ export default function Hero() {
               >
                 Book a Demo
                 <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="#conversation-demo"
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-white hover:bg-primary-50 text-primary border border-primary-200 font-semibold text-[15px] transition-all hover:shadow-md hover:-translate-y-0.5"
-              >
-                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-                  <Play className="w-3 h-3 fill-current ml-0.5" />
-                </div>
-                Watch Voice Demo
               </a>
             </div>
 

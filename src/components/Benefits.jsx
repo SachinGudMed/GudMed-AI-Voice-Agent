@@ -7,7 +7,7 @@ import {
   TrendingUp,
   PhoneCall,
   GitMerge,
-  Cpu
+  Cpu,
 } from "lucide-react";
 
 export default function Benefits() {
@@ -55,9 +55,11 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="benefits" className="py-20 bg-gray-50/50 relative overflow-hidden">
+    <section
+      id="benefits"
+      className="py-20 bg-gray-50/50 relative overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary-200/50 text-primary text-xs font-semibold uppercase tracking-wider">
             Key Outcomes
@@ -66,10 +68,11 @@ export default function Benefits() {
             style={{ fontFamily: "Poppins, sans-serif" }}
             className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight"
           >
-            Why Hospitals Choose CareVoice.AI
+            Why Hospitals Choose GudMed.AI
           </h2>
           <p className="text-base text-gray-600">
-            Streamline operational hospital workflows, save personnel costs, and deliver immediate value to patients.
+            Streamline operational hospital workflows, save personnel costs, and
+            deliver immediate value to patients.
           </p>
         </div>
 
@@ -99,7 +102,6 @@ export default function Benefits() {
             );
           })}
         </div>
-
       </div>
     </section>
   );

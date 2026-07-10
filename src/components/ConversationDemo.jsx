@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { Play, Pause, RotateCcw, Bot, UserRound, Phone, Volume2, CalendarCheck, IndianRupee } from "lucide-react";
+import {
+  Play,
+  Pause,
+  RotateCcw,
+  Bot,
+  UserRound,
+  Phone,
+  Volume2,
+  CalendarCheck,
+  IndianRupee,
+} from "lucide-react";
 
 export default function ConversationDemo() {
   const dialogue = [
@@ -68,14 +78,16 @@ export default function ConversationDemo() {
   };
 
   return (
-    <section id="conversation-demo" className="py-20 bg-primary-900 text-white relative overflow-hidden">
+    <section
+      id="conversation-demo"
+      className="py-20 text-primary relative overflow-hidden"
+    >
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary-600/30 rounded-full blur-3xl -z-10" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-900/30 rounded-full blur-3xl -z-10" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/30 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-primary-200 text-xs font-semibold uppercase tracking-wider">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary border border-white/20 text-white text-xs font-semibold uppercase tracking-wider">
             Live Simulator
           </div>
           <h2
@@ -84,13 +96,13 @@ export default function ConversationDemo() {
           >
             Voice Conversation Demo
           </h2>
-          <p className="text-base text-primary-200">
-            Click play below to simulate an interactive patient call and watch how CareVoice.AI books appointments in real time.
+          <p className="text-primary">
+            Click play below to simulate an interactive patient call and watch
+            how GudMed.AI books appointments in real time.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
           {/* Simulator Panel Control */}
           <div className="lg:col-span-5 space-y-6 flex flex-col justify-center">
             <div className="bg-white/5 border border-white/10 p-6 rounded-2xl space-y-4">
@@ -100,8 +112,9 @@ export default function ConversationDemo() {
               >
                 Simulation Controls
               </h3>
-              <p className="text-sm text-primary-200/80 leading-relaxed font-sans">
-                Experience the natural language processing, quick check parameters, and doctor mapping flow.
+              <p className="text-sm text-primary leading-relaxed font-sans">
+                Experience the natural language processing, quick check
+                parameters, and doctor mapping flow.
               </p>
 
               <div className="flex items-center gap-4 pt-2">
@@ -132,12 +145,16 @@ export default function ConversationDemo() {
             {/* AI Call Stats indicator */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
-                <div className="text-2xl font-bold text-green-400">0.2s</div>
-                <div className="text-xs text-primary-200/70 font-sans">Response Latency</div>
+                <div className="text-2xl font-bold text-primary">0.2s</div>
+                <div className="text-xs text-primary font-sans">
+                  Response Latency
+                </div>
               </div>
               <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
-                <div className="text-2xl font-bold text-green-400">98.4%</div>
-                <div className="text-xs text-primary-200/70 font-sans">Intent Accuracy</div>
+                <div className="text-2xl font-bold text-primary">98.4%</div>
+                <div className="text-xs text-primary font-sans">
+                  Intent Accuracy
+                </div>
               </div>
             </div>
           </div>
@@ -145,15 +162,18 @@ export default function ConversationDemo() {
           {/* Interactive Chat Window */}
           <div className="lg:col-span-7">
             <div className="w-full max-w-2xl mx-auto bg-primary-800/80 border border-primary-700/80 rounded-3xl overflow-hidden shadow-2xl">
-              
               {/* Voice call status header */}
               <div className="px-6 py-4 bg-primary-900 border-b border-primary-700/50 flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary-300">
-                    <Volume2 className={`w-5 h-5 ${isPlaying ? 'animate-bounce' : ''}`} />
+                    <Volume2
+                      className={`w-5 h-5 ${isPlaying ? "animate-bounce" : ""}`}
+                    />
                   </div>
                   <div>
-                    <span className="text-sm font-semibold block">CareVoice Incoming Line 1</span>
+                    <span className="text-sm text-white font-semibold block">
+                      GudMed Incoming Line 1
+                    </span>
                     <span className="text-xs text-green-400 flex items-center gap-1 font-medium">
                       <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-ping" />
                       Active Call Simulation
@@ -170,7 +190,9 @@ export default function ConversationDemo() {
                 {currentStep === -1 && (
                   <div className="flex flex-col items-center justify-center h-full py-20 text-center text-primary-200/60">
                     <Phone className="w-12 h-12 mb-3 animate-pulse text-primary-400" />
-                    <p className="text-sm">Click "Play Call" to start the conversation simulation</p>
+                    <p className="text-sm">
+                      Click "Play Call" to start the conversation simulation
+                    </p>
                   </div>
                 )}
 
@@ -187,10 +209,16 @@ export default function ConversationDemo() {
                     >
                       <div
                         className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 shadow-md ${
-                          isAi ? "bg-primary text-white" : "bg-white/15 text-primary-100"
+                          isAi
+                            ? "bg-primary text-white"
+                            : "bg-white/15 text-primary-100"
                         }`}
                       >
-                        {isAi ? <Bot className="w-5 h-5" /> : <UserRound className="w-5 h-5" />}
+                        {isAi ? (
+                          <Bot className="w-5 h-5" />
+                        ) : (
+                          <UserRound className="w-5 h-5" />
+                        )}
                       </div>
 
                       <div className="space-y-2 max-w-[80%]">
@@ -208,25 +236,35 @@ export default function ConversationDemo() {
                         {isAi && chat.details && (
                           <div className="bg-primary-950 border border-primary-700/60 p-4 rounded-xl space-y-3.5 text-xs text-left max-w-sm">
                             <div className="flex justify-between items-center pb-2 border-b border-primary-800">
-                              <span className="font-bold text-primary-300">Recommended Consultant</span>
+                              <span className="font-bold text-primary-300">
+                                Recommended Consultant
+                              </span>
                               <span className="bg-primary/20 px-2 py-0.5 rounded text-[10px] text-primary-200">
                                 {chat.details.specialty}
                               </span>
                             </div>
                             <div className="grid grid-cols-2 gap-4">
                               <div>
-                                <span className="text-[10px] text-primary-400 block uppercase font-bold">Doctor</span>
-                                <span className="font-semibold text-white">{chat.details.doctor}</span>
+                                <span className="text-[10px] text-primary-400 block uppercase font-bold">
+                                  Doctor
+                                </span>
+                                <span className="font-semibold text-white">
+                                  {chat.details.doctor}
+                                </span>
                               </div>
                               <div>
-                                <span className="text-[10px] text-primary-400 block uppercase font-bold">Fee</span>
+                                <span className="text-[10px] text-primary-400 block uppercase font-bold">
+                                  Fee
+                                </span>
                                 <span className="font-semibold text-white flex items-center gap-0.5">
                                   <IndianRupee className="w-3.5 h-3.5" /> 700
                                 </span>
                               </div>
                             </div>
                             <div>
-                              <span className="text-[10px] text-primary-400 block uppercase font-bold mb-1.5">Available Slots</span>
+                              <span className="text-[10px] text-primary-400 block uppercase font-bold mb-1.5">
+                                Available Slots
+                              </span>
                               <div className="flex gap-2">
                                 {chat.details.slots.map((s, i) => (
                                   <span
@@ -252,12 +290,9 @@ export default function ConversationDemo() {
                   );
                 })}
               </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

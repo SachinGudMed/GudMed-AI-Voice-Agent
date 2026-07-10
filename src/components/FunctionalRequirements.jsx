@@ -1,5 +1,12 @@
 import React from "react";
-import { Brain, Sparkles, Calendar, BadgePercent, CheckCircle, PhoneForwarded } from "lucide-react";
+import {
+  Brain,
+  Sparkles,
+  Calendar,
+  BadgePercent,
+  CheckCircle,
+  PhoneForwarded,
+} from "lucide-react";
 
 export default function FunctionalRequirements() {
   const specs = [
@@ -29,10 +36,19 @@ export default function FunctionalRequirements() {
       title: "Slot Availability",
       icon: Calendar,
       capabilities: [
-        { label: "Available Dates", val: "Dynamically synced real-time calendar" },
+        {
+          label: "Available Dates",
+          val: "Dynamically synced real-time calendar",
+        },
         { label: "Available Time", val: "Morning & evening sessions" },
-        { label: "Working Days", val: "Mon-Sat exclusions automatically filtered" },
-        { label: "Consultant Status", val: "Shows on-leave or unavailable warnings" },
+        {
+          label: "Working Days",
+          val: "Mon-Sat exclusions automatically filtered",
+        },
+        {
+          label: "Consultant Status",
+          val: "Shows on-leave or unavailable warnings",
+        },
       ],
       bg: "from-teal-50/50 to-white",
     },
@@ -42,7 +58,10 @@ export default function FunctionalRequirements() {
       capabilities: [
         { label: "Fee Quotes", val: "Standard, premium, and senior rates" },
         { label: "Follow-up Fee", val: "Free within 7 days, custom policies" },
-        { label: "Payment Info", val: "Online booking links & cash-at-counter option" },
+        {
+          label: "Payment Info",
+          val: "Online booking links & cash-at-counter option",
+        },
       ],
       bg: "from-amber-50/50 to-white",
     },
@@ -50,8 +69,14 @@ export default function FunctionalRequirements() {
       title: "Appointment Booking",
       icon: CheckCircle,
       capabilities: [
-        { label: "Confirm Booking", val: "Voice confirmation via OTP or details" },
-        { label: "Receive Confirmation", val: "Sends SMS, WhatsApp, and email alerts" },
+        {
+          label: "Confirm Booking",
+          val: "Voice confirmation via OTP or details",
+        },
+        {
+          label: "Receive Confirmation",
+          val: "Sends SMS, WhatsApp, and email alerts",
+        },
         { label: "Cancellation & Edits", val: "Option to reschedule via link" },
       ],
       bg: "from-green-50/50 to-white",
@@ -62,7 +87,10 @@ export default function FunctionalRequirements() {
       capabilities: [
         { label: "Reception", val: "Direct local extension routing" },
         { label: "Call Center", val: "IVR queue insertion" },
-        { label: "Hospital Staff", val: "Duty doctor / emergency unit transfer" },
+        {
+          label: "Hospital Staff",
+          val: "Duty doctor / emergency unit transfer",
+        },
       ],
       bg: "from-red-55/50 to-white",
     },
@@ -71,7 +99,6 @@ export default function FunctionalRequirements() {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary-200/50 text-primary text-xs font-semibold uppercase tracking-wider">
             Technical Matrix
@@ -83,7 +110,8 @@ export default function FunctionalRequirements() {
             Functional Capabilities
           </h2>
           <p className="text-base text-gray-600">
-            CareVoice.AI covers the complete range of hospital reception duties, ensuring no calls are dropped or mismanaged.
+            GudMed.AI covers the complete range of hospital reception duties,
+            ensuring no calls are dropped or mismanaged.
           </p>
         </div>
 
@@ -109,7 +137,10 @@ export default function FunctionalRequirements() {
 
                 <div className="space-y-3">
                   {spec.capabilities.map((cap, idx) => (
-                    <div key={idx} className="flex flex-col border-b border-primary-50/40 pb-2 last:border-0 last:pb-0">
+                    <div
+                      key={idx}
+                      className="flex flex-col border-b border-primary-50/40 pb-2 last:border-0 last:pb-0"
+                    >
                       <span className="text-[11px] font-bold text-primary-400 uppercase tracking-wider">
                         {cap.label}
                       </span>
@@ -123,7 +154,6 @@ export default function FunctionalRequirements() {
             );
           })}
         </div>
-
       </div>
     </section>
   );
