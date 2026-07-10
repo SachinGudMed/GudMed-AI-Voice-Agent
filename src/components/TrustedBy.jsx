@@ -3,10 +3,10 @@ import { Hospital, HeartPulse, ShieldCheck, Activity } from "lucide-react";
 
 export default function TrustedBy() {
   const logos = [
-    { name: "Metro Health", icon: Hospital },
-    { name: "Apex Clinic", icon: HeartPulse },
-    { name: "Sacred Heart", icon: ShieldCheck },
-    { name: "CarePlus Hospital", icon: Activity },
+    { name: "Sir Ganga Ram Hospital", icon: Hospital },
+    { name: "Lilavati Hospital", icon: HeartPulse },
+    { name: "AIIMS", icon: ShieldCheck },
+    { name: "Sarvodaya Hospital", icon: Activity },
   ];
 
   return (
@@ -19,7 +19,10 @@ export default function TrustedBy() {
           {logos.map((logo, idx) => {
             const Icon = logo.icon;
             return (
-              <div key={idx} className="flex items-center gap-2.5 hover:opacity-100 transition-opacity cursor-pointer">
+              <div
+                key={idx}
+                className="flex items-center gap-2.5 hover:opacity-100 transition-opacity cursor-pointer"
+              >
                 <div className="w-9 h-9 rounded-lg bg-primary-50 flex items-center justify-center text-primary">
                   <Icon className="w-5 h-5" />
                 </div>
