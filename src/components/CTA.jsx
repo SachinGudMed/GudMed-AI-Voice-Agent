@@ -14,7 +14,7 @@ export default function CTA() {
           <div className="max-w-3xl mx-auto space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-primary-200 text-xs font-semibold uppercase tracking-wider">
               <Sparkles
-                className="w-4 h-4 text-yellow-300 animate-spin"
+                className="w-4 h-4 text-white animate-spin"
                 style={{ animationDuration: "3s" }}
               />
               Get Started Today
