@@ -8,11 +8,11 @@ import {
   ShieldCheck,
   CheckCircle,
 } from "lucide-react";
-import ai from "../assets/Ai_voice_bot.jpeg";
+import ai from "../assets/Ai_voice_bot.png";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-primary-50 via-white to-white">
+    <section className="relative pt-32 pb-24 md:pt-20 md:pb-32 overflow-hidden bg-white">
       {/* Background Decorative Gradients */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-100/50 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3" />
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-50 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3" />
@@ -85,7 +85,7 @@ export default function Hero() {
               <img
                 src={ai}
                 alt="AI Voice Agent"
-                className="w-full h-full rounded-3xl object-contain"
+                className="w-full h-full rounded-3xl object-contain mt-6"
               />
             </div>
           </div>

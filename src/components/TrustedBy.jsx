@@ -12,10 +12,10 @@ export default function TrustedBy() {
   return (
     <section className="py-12 bg-white border-y border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-xs font-semibold text-gray-400 uppercase tracking-widest mb-8">
+        <p className="text-center text-xs font-semibold text-gray-600 uppercase tracking-widest mb-8">
           Trusted by India's Leading Healthcare Providers & Hospitals
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-65">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
           {logos.map((logo, idx) => {
             const Icon = logo.icon;
             return (

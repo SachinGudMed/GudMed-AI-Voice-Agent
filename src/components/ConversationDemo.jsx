@@ -151,7 +151,7 @@ export default function ConversationDemo() {
                 </div>
               </div>
               <div className="bg-white/5 border border-white/10 p-4 rounded-xl text-center">
-                <div className="text-2xl font-bold text-primary">98.4%</div>
+                <div className="text-2xl font-bold text-primary">98.4%+</div>
                 <div className="text-xs text-primary font-sans">
                   Intent Accuracy
                 </div>
