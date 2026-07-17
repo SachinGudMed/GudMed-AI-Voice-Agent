@@ -28,7 +28,7 @@ export default function Hero() {
 
             <h1
               style={{ fontFamily: "Poppins, sans-serif" }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-primary leading-tight tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary"
             >
               AI Voice Agent for Hospital{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-400">

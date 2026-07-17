@@ -92,7 +92,7 @@ export default function ConversationDemo() {
           </div>
           <h2
             style={{ fontFamily: "Poppins, sans-serif" }}
-            className="text-3xl sm:text-4xl font-extrabold tracking-tight"
+            className="text-3xl sm:text-4xl font-semibold tracking-tight"
           >
             Voice Conversation Demo
           </h2>

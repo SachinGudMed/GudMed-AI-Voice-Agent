@@ -22,7 +22,7 @@ export default function CTA() {
 
             <h2
               style={{ fontFamily: "Poppins, sans-serif" }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight"
             >
               Ready to Automate Your Hospital Appointment Booking?
             </h2>

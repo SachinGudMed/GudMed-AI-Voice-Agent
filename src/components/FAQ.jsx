@@ -46,7 +46,7 @@ export default function FAQ() {
           </div>
           <h2
             style={{ fontFamily: "Poppins, sans-serif" }}
-            className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight"
+            className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight"
           >
             Frequently Asked Questions
           </h2>

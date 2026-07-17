@@ -105,7 +105,7 @@ export default function FunctionalRequirements() {
           </div>
           <h2
             style={{ fontFamily: "Poppins, sans-serif" }}
-            className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight"
+            className="text-3xl sm:text-4xl font-semibold text-primary tracking-tight"
           >
             Functional Capabilities
           </h2>
