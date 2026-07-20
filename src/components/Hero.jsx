@@ -8,7 +8,7 @@ import {
   ShieldCheck,
   CheckCircle,
 } from "lucide-react";
-import ai from "../assets/Ai_voice_bot.png";
+import ai from "../assets/ai.png";
 
 export default function Hero() {
   return (
